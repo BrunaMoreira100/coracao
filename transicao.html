@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+.content-coracao {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  margin: 200px auto;
+  -webkit-animation: pulsa 1s linear 0s infinite;
+}
+@keyframes pulsa {
+  0% {
+    transform: scale(0.9) rotate(0deg);
+  }
+  50% {
+    transform: scale(1) rotate(0deg);
+  }
+  70% {
+    transform: scale(1.1) rotate(0deg);
+  }
+  80% {
+    transform: scale(1.2) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+.square {
+  transform: rotate(45deg);
+  width: 200px;
+  height: 200px;
+  background: #e71940;
+  position: absolute;
+  top: 120px;
+}
+.circle:after,
+.circle:before {
+  content: "";
+  position: absolute;
+  width: 216px;
+  height: 222px;
+  border-radius: 250%;
+  background: #e71940;
+}
+.circle:after {
+  left: 20px;
+  top: 24px;
+}
+.circle:before {
+  right: 20px;
+  top: 24px;
+}
+
+    </style>
+<body style="background-color: rgb(243, 191, 191);">
+        <h1 style= "color: #8f1f53;text-align: center;font-style: oblique;"> EU AMO TECNOLOGIA! </h1>
+
+<div class="content-coracao">
+    <div class="square"></div>
+    <div class="circle"></div>
+  </div>
+
+</body>
+</html>
